@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/53025ffb8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="top-bar mt-5 container mx-auto border-b-[2px] border-[#000]">
+      <div class="large-8 columns menu-area">
+        <div class="top-bar-section">
+          <div class="flex items-center lg:justify-between justify-center">
+            <div class="h-[80px]">
+              <a href="#"
+                ><img
+                  class="h-full"
+                  src="https://i.ibb.co/9ZXj5Yx/b117a066ace15d5b9c39306fa98b4cb3.jpg"
+                  alt="Toronto Immigration lawyer"
+                  id="logo"
+              /></a>
+            </div>
+            <div class="left padding-top md:block hidden">
+              <span class="menu-right">
+                <a class="text-[#c51c1c]" href="">(416) 690 1855</a>
+                <a
+                  class="border-[1px] border-[red] text-[#c51c1c] px-2 py-2 rounded-full mx-4"
+                  href="#"
+                  >E-MAIL NOW</a
+                >
+                <a
+                  href="#"
+                  class="border-[1px] border-[red] text-[#c51c1c] px-2 py-2 rounded-full"
+                  >REQUEST A LEGAL CONSULTATION</a
+                >
+              </span>
+            </div>
+          </div>
+          <header class="bg-white">
+            <nav class="relative px-2 py-4">
+              <div class="container mx-auto flex justify-end items-end">
+                <ul class="hidden md:flex space-x-6">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+
+                  <li class="flex relative group">
+                    <a href="service.html" class="mr-1">Services</a>
+                    <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+                    <!-- Submenu starts -->
+                    <ul
+                      class="absolute z-50 bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+                    >
+                      <li class="text-sm hover:bg-slate-100 leading-8">
+                        <a href="services.html">Service One</a>
+                      </li>
+                      <li class="text-sm hover:bg-slate-100 leading-8">
+                        <a href="#">Service Two</a>
+                      </li>
+                      <li class="text-sm hover:bg-slate-100 leading-8">
+                        <a href="#">Service Three</a>
+                      </li>
+                    </ul>
+                    <!-- Submenu ends -->
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Mobile menu icon -->
+                <button id="mobile-icon" class="md:hidden">
+                  <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+
+              <!-- Mobile menu -->
+              <div class="md:hidden flex justify-center mt-3 w-full z-50">
+                <div
+                  id="mobile-menu"
+                  class="mobile-menu absolute top-23 w-full z-50"
+                >
+                  <!-- add hidden here later -->
+                  <ul
+                    class="bg-gray-100 z-50 shadow-lg leading-9 font-bold h-screen"
+                  >
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+                    >
+                      <a href="#" class="block pl-7">Home</a>
+                    </li>
+
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white"
+                    >
+                      <a href="service.html" class="block pl-11"
+                        >Services
+                        <i class="fa-solid fa-chevron-down fa-2xs pt-4"></i
+                      ></a>
+
+                      <!-- Submenu starts -->
+                      <ul class="bg-white text-gray-800 w-full z-50">
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service One</a>
+                        </li>
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service Two</a>
+                        </li>
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service Three</a>
+                        </li>
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service Four</a>
+                        </li>
+                      </ul>
+                      <!-- Submenu ends -->
+                    </li>
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+                    >
+                      <a href="about.html" class="block pl-7">About</a>
+                    </li>
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+                    >
+                      <a href="contact.html" class="block pl-7">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </nav>
+
+    <main class="homepage">
+      <div class="banner relative">
+        <img
+          alt="Scarborough Family Lawyer"
+          src="https://t3.ftcdn.net/jpg/06/23/78/88/360_F_623788874_AkPJl27fwKD8DGW4Eg6R2JSZ5eFIUYl6.jpg"
+          class="w-full h-full"
+        />
+      </div>
+
+      <div class="bg-black md:h-64 h-full text-white">
+        <div class="container mx-auto">
+          <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-16 centered-list">
+            <li>
+              <div class="flex items-center justify-center md:justify-start">
+                <div class="w-16 md:w-24 h-16 md:h-24 md:mt-12">
+                  <a href="#" class="">
+                    <i
+                      class="fa-regular fa-envelope w-[50px] h-[50px] rounded-full bg-[#EE4E4E] text-white flex items-center justify-center text-[20px]"
+                    ></i>
+                  </a>
+                </div>
+                <div class="ml-2 md:ml-4">
+                  <p class="text-sm md:text-base">
+                    <a href="mailto:k@mahbu.com" class="">
+                      Email us at:<br />
+                      demo@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center justify-center md:justify-start">
+                <div class="w-16 md:w-24 h-16 md:h-24 text-center md:mt-12">
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-location-dot w-[50px] h-[50px] rounded-full bg-[#EE4E4E] text-white flex items-center justify-center text-[20px]"
+                    ></i>
+                  </a>
+                </div>
+                <div class="ml-2 md:ml-4">
+                  <p class="text-sm md:text-base">
+                    <a href="">
+                      2972 mirpur,<br />
+                      2nd Floor, Toronto, ON, M4C 1M6.<br />
+                      And<br />
+                      Shawpnil Road 2/3 House No. 3 <br />
+                      Block - L Unit A2 Chairman mirpur, mirpur Dhaka
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex items-center justify-center md:justify-start">
+                <div class="w-16 md:w-24 h-16 md:h-24 text-center md:mt-12">
+                  <a href="tel:(416) 731 7695">
+                    <i
+                      class="fa-regular fa-envelope w-[50px] h-[50px] rounded-full bg-[#EE4E4E] text-white flex items-center justify-center text-[20px]"
+                    ></i>
+                  </a>
+                </div>
+                <div class="ml-2 md:ml-4">
+                  <p class="text-sm md:text-base">
+                    <a href="tel:(416) 731 7695">
+                      Contact Mahabub Ahmed<br />
+                      (416) 731 76
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 px-4 container mx-auto">
+        <div
+          class="flex items-center lg:flex-row flex-col justify-bewteen gap-10"
+        >
+          <div class="w-full lg:w-[70%]">
+            <h1 class="text-2xl md:text-3xl font-bold leading-tight mb-4">
+              Mahabub Ahmed Law Office<br />Law Firm in Toronto, ON
+            </h1>
+            <div class="description search-pad">
+              <div class="search-list-p">
+                <h2 class="merge font-semibold text-lg mb-2">
+                  At Mahbub Ahmed Law Office - law firm in Toronto, we are a
+                  team that is committed to provide you legal support.
+                </h2>
+                <p class="search-list-p merge leading-relaxed mb-4">
+                  At Mahbub Ahmed Law Office - law firm in Toronto, we are a
+                  team that is committed to provide you legal support. We
+                  approach every client with a focus on integrity, advocacy and
+                  understanding. Kamrul has over 10 years of extensive
+                  experience in residential and commercial real estate
+                  transactions, commercial leasing and private lending. His
+                  clients include individuals, business entrepreneurs,
+                  developers, and financial institutions. Kamrul's law office in
+                  Toronto also provides personal support throughout the entire
+                  immigration and application process, whether you are pursuing
+                  temporary or permanent residency, a work permit or student
+                  visa or any of the various paths to immigrate to Canada.
+                  Contact our lawyer at the Mahbub Ahmed Law Office to know more
+                  about the legal services we provide across Toronto,
+                  Scarborough, Mississauga, Brampton, Etobicoke, Oakville,
+                  Hamilton and the other surrounding areas. Contact our law firm
+                  in Toronto, ON to know more about the legal services we
+                  provide>>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-[28%]">
+            <h4
+              class="text-lg font-semibold mb-1 bg-black text-white py-2 px-2"
+            >
+              LEGAL SERVICES
+            </h4>
+            <ul class="text-black">
+              <li class="mb-1 bg-gray-200 py-2 px-4">
+                <a href="#">REAL ESTATE LAW</a>
+              </li>
+              <li class="mb-1 bg-gray-200 py-2 px-4">
+                <a href="#">IMMIGRATION LAW</a>
+              </li>
+              <li class="mb-1 bg-gray-200 py-2 px-4">
+                <a href="#">FAMILY LAW</a>
+              </li>
+              <li class="mb-1 bg-gray-200 py-2 px-4">
+                <a href="/pages/services">CRIMINAL LAW</a>
+              </li>
+              <li class="mb-1 bg-gray-200 py-2 px-4">
+                <a href="#">GENERAL PRACTICE</a>
+              </li>
+              <li class="mb-1 bg-gray-200 py-2 px-4">
+                <a href="#">Wills</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- follow  -->
+
+      <div class="bg-red-600 h-[200px] flex items-center justify-center mt-8">
+        <div class="container mx-auto">
+          <div class="flex items-center flex-row justify-bewteen gap-10">
+            <div class="w-[48%] text-center border-r-[1px] border-white">
+              <h1 class="text-[42px] text-white">FOLLOW</h1>
+            </div>
+            <div class="w[48%] mx-auto">
+              <div>
+                <a href="#" class="text-white text-[42px] mr-10">
+                  <i class="fa-brands fa-square-facebook"></i
+                ></a>
+                <a href="#" class="text-white text-[42px]">
+                  <i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact  -->
+
+      <div
+        class="call-us bg-gray-100 py-8"
+        style="
+          background-image: url('https://d14ty28lkqz1hw.cloudfront.net/data/org/14410/theme/20714/img/contact-bg.jpg');
+        "
+      >
+        <div class="container mx-auto">
+          <div class="flex flex-wrap items-center justify-center">
+            <div class="w-full md:w-1/2 text-center">
+              <a href="#">
+                <img
+                  src="https://t4.ftcdn.net/jpg/02/95/96/79/360_F_295967926_T2nUnmhQc00dwwp3KsvJSPHMP2xhekry.jpg"
+                  alt="Scarborough Notary Public"
+                  class="rounded-lg shadow-lg"
+                />
+              </a>
+            </div>
+            <div
+              class="w-full md:w-1/2 text-center md:text-left mb-4 md:mt-0 mt-4 md:mb-0"
+            >
+              <h2 class="text-5xl text-white mb-3">About Mahbub Ahmed</h2>
+              <h2 class="text-3xl text-white">
+                Immigration Lawyer in Toronto, ON
+              </h2>
+              <div class="mt-4">
+                <h3 class="text-xl text-white">Law Firm in Toronto, ON</h3>
+                <p class="text-white my-4">
+                  Mahabub Ahmed is an immigration lawyer based in Toronto and
+                  provides legal advice on all facets of Canadian immigration.
+                </p>
+                <p>
+                  <a href="#" class="bg-white text-red py-2 px-4 rounded-full"
+                    >READ MORE</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-14 mb-14">
+        <div class="flex flex-wrap items-center justify-center">
+          <div class="w-full md:w-5/12 text-center md:text-left mb-4 md:mb-0">
+            <h2 class="text-3xl text-gray-800 font-bold">
+              Contact Mahabub Ahmed Law Office
+            </h2>
+            <div class="mt-4">
+              <p class="text-gray-600 my-6">
+                Mahbub Ahmed has been offering professional legal help since
+                2008 for Immigration Law, Real Estate Law, Criminal Law, Family
+                Law, and Wills & Estates. Contact Kamrul Hafiz Ahmed Law Office
+                - lawyer in Toronto, ON for all your legal concerns.
+              </p>
+              <p>
+                <a
+                  href="/#"
+                  class="bg-red-500 text-white py-2 px-4 rounded-full"
+                  >contact our lawyer</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-7/12 flex justify-center items-center">
+            <a href="#">
+              <img
+                src="https://d2wvwvig0d1mx7.cloudfront.net/data/org/14410/media/img/cache/544x545/1480467_544x545.jpg"
+                alt="Scarborough Family Lawyer"
+                class="flex items-center justify-center"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="buy-sell bg-gray-100 py-8">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap">
+            <div class="w-full">
+              <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <li class="buy-sell-content">
+                  <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-center">
+                      <a href="#">
+                        <img
+                          class=""
+                          alt="Scarborough Immigration Lawyer"
+                          src="https://d2wvwvig0d1mx7.cloudfront.net/data/org/14410/media/img/cache/85x0/1480473_85x0.jpg"
+                        />
+                      </a>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:ml-4 md:w-2/3">
+                      <h2 class="text-2xl text-gray-800 font-bold">
+                        <a href="#">Wills</a>
+                      </h2>
+                      <div class="description mt-2">
+                        <p class="text-gray-600">
+                          A will is a legal document by which a person, the
+                          testator, expresses his/her wishes as to how his or
+                          her property is to be distributed at death...
+                        </p>
+                        <p class="read-more mt-2">
+                          <a class="text-red-500 hover:underline" href="#"
+                            >READ MORE</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="buy-sell-content">
+                  <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-center">
+                      <a href="#">
+                        <img
+                          class=""
+                          alt="Toronto Immigration lawyer"
+                          src="https://d2wvwvig0d1mx7.cloudfront.net/data/org/14410/media/img/cache/85x0/1480474_85x0.jpg"
+                        />
+                      </a>
+                    </div>
+                    <div class="mt-4 md:mt-0 md:ml-4 md:w-2/3">
+                      <h2 class="text-2xl text-gray-800 font-bold">
+                        <a href="#">Lawyer Profile</a>
+                      </h2>
+                      <div class="description mt-2">
+                        <p class="text-gray-600">
+                          We are a team that is committed to providing you legal
+                          support. We approach every client with a focus on
+                          integrity, advocacy &amp; understanding.
+                        </p>
+                        <p class="read-more mt-2">
+                          <a class="text-red-500 hover:underline" href="#"
+                            >READ MORE</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs-text bg-gray-100 py-8">
+        <div class="container mx-auto">
+          <div class="text-center mb-8">
+            <div class="description">
+              <div>
+                <a
+                  class="bg-red-500 text-white py-2 px-4 rounded-full"
+                  href="#"
+                  target="_blank"
+                  >Business Card</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div id="tabs" class="w-full">
+              <ul class="flex flex-wrap list-none border-b-2">
+                <!-- Add your tab headers here -->
+              </ul>
+              <div class="mt-4">
+                <!-- Add your tab content here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-30px] bg-[#000] py-10">
+      <div class="container mx-auto">
+        <div class="flex justify-between flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-[48%]">
+            <p class="text-white"><i class="fa-solid fa-location-dot"></i></p>
+            <p class="text-white mb-2">
+              2972 Danforth Avenue, 2nd Floor, Toronto, ON, M4C 1M6 Canada
+              Shawpnil Road 2/3 House No. 3 Block - L Unit A2 Chairman Bari,
+              Banani Dhaka
+            </p>
+          </div>
+          <div class="w-full lg:w-[48%]">
+            <div class="flex itmes-center gap-10 justify-between">
+              <div
+                class="px-3 py-1 border-[1px] borde-gray-500 rounded-full flex items-center gap-4 justify-center"
+              >
+                <i class="text-[#fff] fa-solid fa-envelope"></i>
+                <p class="text-[#fff]">JOIN MAILING LIST</p>
+              </div>
+              <div>
+                <a href="#" class="text-white text-2xl mr-2">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white text-2xl">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full h-[2px] my-8 bg-gray-500" />
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="w-48%]">
+            <p class="text-[#fff]">
+              Copyright © 2024 - Kamrul Hafiz Ahmed Law Office
+            </p>
+          </div>
+          <div class="w-[48%]">
+            <p class="text-[#fff]">Powered By: Mahabub Alom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const mobile_icon = document.getElementById("mobile-icon");
+      const mobile_menu = document.getElementById("mobile-menu");
+      const hamburger_icon = document.querySelector("#mobile-icon i");
+
+      function openCloseMenu() {
+        mobile_menu.classList.toggle("block");
+        mobile_menu.classList.toggle("active");
+      }
+
+      function changeIcon(icon) {
+        icon.classList.toggle("fa-xmark");
+      }
+
+      mobile_icon.addEventListener("click", openCloseMenu);
+    </script>
+  </body>
+</html>

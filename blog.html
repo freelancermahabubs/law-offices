@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/53025ffb8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="top-bar mt-5 container mx-auto border-b-[2px] border-[#000]">
+      <div class="large-8 columns menu-area">
+        <div class="top-bar-section">
+          <div class="flex items-center lg:justify-between justify-center">
+            <div class="h-[80px]">
+              <a href="#"
+                ><img
+                  class="h-full"
+                  src="https://i.ibb.co/9ZXj5Yx/b117a066ace15d5b9c39306fa98b4cb3.jpg"
+                  alt="Toronto Immigration lawyer"
+                  id="logo"
+              /></a>
+            </div>
+            <div class="left padding-top md:block hidden">
+              <span class="menu-right">
+                <a class="text-[#c51c1c]" href="">(416) 690 1855</a>
+                <a
+                  class="border-[1px] border-[red] text-[#c51c1c] px-2 py-2 rounded-full mx-4"
+                  href="#"
+                  >E-MAIL NOW</a
+                >
+                <a
+                  href="#"
+                  class="border-[1px] border-[red] text-[#c51c1c] px-2 py-2 rounded-full"
+                  >REQUEST A LEGAL CONSULTATION</a
+                >
+              </span>
+            </div>
+          </div>
+          <header class="bg-white">
+            <nav class="relative px-2 py-4">
+              <div class="container mx-auto flex justify-end items-end">
+                <ul class="hidden md:flex space-x-6">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+
+                  <li class="flex relative group">
+                    <a href="service.html" class="mr-1">Services</a>
+                    <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+                    <!-- Submenu starts -->
+                    <ul
+                      class="absolute z-50 bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+                    >
+                      <li class="text-sm hover:bg-slate-100 leading-8">
+                        <a href="services.html">Service One</a>
+                      </li>
+                      <li class="text-sm hover:bg-slate-100 leading-8">
+                        <a href="#">Service Two</a>
+                      </li>
+                      <li class="text-sm hover:bg-slate-100 leading-8">
+                        <a href="#">Service Three</a>
+                      </li>
+                    </ul>
+                    <!-- Submenu ends -->
+                  </li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Mobile menu icon -->
+                <button id="mobile-icon" class="md:hidden">
+                  <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+
+              <!-- Mobile menu -->
+              <div class="md:hidden flex justify-center mt-3 w-full z-50">
+                <div
+                  id="mobile-menu"
+                  class="mobile-menu absolute top-23 w-full z-50"
+                >
+                  <!-- add hidden here later -->
+                  <ul
+                    class="bg-gray-100 z-50 shadow-lg leading-9 font-bold h-screen"
+                  >
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+                    >
+                      <a href="#" class="block pl-7">Home</a>
+                    </li>
+
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white"
+                    >
+                      <a href="service.html" class="block pl-11"
+                        >Services
+                        <i class="fa-solid fa-chevron-down fa-2xs pt-4"></i
+                      ></a>
+
+                      <!-- Submenu starts -->
+                      <ul class="bg-white text-gray-800 w-full z-50">
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service One</a>
+                        </li>
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service Two</a>
+                        </li>
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service Three</a>
+                        </li>
+                        <li
+                          class="text-sm leading-8 font-normal hover:bg-slate-200"
+                        >
+                          <a class="block pl-16" href="#">Service Four</a>
+                        </li>
+                      </ul>
+                      <!-- Submenu ends -->
+                    </li>
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+                    >
+                      <a href="about.html" class="block pl-7">About</a>
+                    </li>
+                    <li
+                      class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+                    >
+                      <a href="contact.html" class="block pl-7">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+    </nav>
+    <!-- blog banner section -->
+    <div class="container mx-auto px-2">
+      <div class="h-[450px] mx-auto w-full">
+        <img
+          class="w-full h-full object-conver"
+          src="https://t4.ftcdn.net/jpg/06/30/02/39/360_F_630023928_XxF1TXveKuH8rzhedzdb7MJVxvxVZ5Jn.jpg"
+          alt="blog_img"
+        />
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-[40px] px-2">
+      <div
+        class="flex lg:flex-row flex-col align-baseline gap-10 justify-bewteen"
+      >
+        <div class="w-full lg:w-[68%]">
+          <h3 class="text-[42px]">
+            Top Five Things to Look for When Hiring a Lawyer
+          </h3>
+          <div class="w-full h-hull mt-4">
+            <img
+              src="https://d14ty28lkqz1hw.cloudfront.net/data/org/14410/media/img/source/edit/1511103_edit.jpg"
+              alt="blog img"
+            />
+          </div>
+          <p class="mt-2">
+            Issues that require legal action can take a toll on the everyday
+            activities of life. The stress can lead to a breaking point
+            especially when you’ve been charged with a crime, fallen prey to
+            medical malpractice, undergoing a divorce, fighting for the custody
+            of your child, or being stuck in the process of employment-based
+            immigration. Such scenarios require a clear and concise
+            understanding of the law so that you can you emerge the victor and
+            protect your interests.
+          </p>
+
+          <button class="button-style-new">READ MORE</button>
+        </div>
+        <div class="w-full lg:w-[28%]">
+          <div class="ps-top-padding ps-lr-padding">
+            <h3 class="text-[22px]">TAGS</h3>
+            <ul class="ps-blog-tags">
+              <li class="blog_list mt-4"><a href="/bail">Bail</a></li>
+
+              <li class="blog_list"><a href="#">Criminal Lawyer</a></li>
+
+              <li class="blog_list">
+                <a href="#">Family Lawyer Scarborough</a>
+              </li>
+
+              <li class="blog_list"><a href="#">Immigration Appeal</a></li>
+
+              <li class="blog_list">
+                <a href="#">Immigration Lawyer Toronto</a>
+              </li>
+
+              <li class="blog_list">
+                <a href="">Notary Document/ services</a>
+              </li>
+
+              <li class="blog_list">
+                <a href="#">Notary Document/services</a>
+              </li>
+
+              <li class="blog_list">
+                <a href="#">Real Estate Lawyer Scarborough</a>
+              </li>
+
+              <li class="blog_list"><a href="#">Wills and Estate</a></li>
+            </ul>
+          </div>
+          <div class="mt-8">
+            <h3 class="text-[22px]">RECENT POSTS</h3>
+            <ul class="#">
+              <li class="blog_list mt-4">
+                <a href="">Top Five Things to Look for When Hiring a Lawyer</a>
+              </li>
+
+              <li class="blog_list">
+                <a href="#">Owner Spotlight: Mahabub Alom</a>
+              </li>
+
+              <li class="blog_list">
+                <a href="#">Announcing The New Website </a>
+              </li>
+
+              <li class="blog_list">
+                <a href="#">New Website Under Construction</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-[30px] mb-4 px-2">
+      <div>
+        <div class="w-[350px] h-[350px]">
+          <img
+            class="w-full h-full"
+            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8"
+            alt=""
+          />
+        </div>
+
+        <p class="mt-3">
+          I’m Mahabub Alom, proud owner of Mahabub Alom Law Office.
+        </p>
+        <p class="my-4">
+          I look forward to sharing my story. I hope that you will enjoy getting
+          to know me better.
+        </p>
+
+        <button class="button-style-new">READ MORE</button>
+      </div>
+
+      <div class="">
+        <h1 class="article-titles" style="text-align: left">
+          <a href="#">Announcing The New Website</a>
+        </h1>
+        <div class="rte">
+          <p>We are delighted to announce the launch of our new website!</p>
+
+          <p>
+            Our new website provides our existing and prospective clients a
+            simple yet interactive view of our work and the services we offer.
+          </p>
+        </div>
+        <button class="button-style-new">READ MORE</button>
+      </div>
+      <div class="mt-10">
+        <h1 class="article-titles" style="text-align: left">
+          <a href="#">New Website Under Construction</a>
+        </h1>
+        <div class="rte">
+          <p>We are delighted to announce the launch of our new website!</p>
+
+          <p>
+            Our new website provides our existing and prospective clients a
+            simple yet interactive view of our work and the services we offer.
+          </p>
+        </div>
+        <button class="button-style-new">READ MORE</button>
+      </div>
+    </div>
+
+    <!-- Your existing footer code -->
+    <footer class="mt-30px] bg-[#000] py-10">
+      <div class="container mx-auto">
+        <div class="flex justify-between flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-[48%]">
+            <p class="text-white"><i class="fa-solid fa-location-dot"></i></p>
+            <p class="text-white mb-2">
+              2972 Danforth Avenue, 2nd Floor, Toronto, ON, M4C 1M6 Canada
+              Shawpnil Road 2/3 House No. 3 Block - L Unit A2 Chairman Bari,
+              Banani Dhaka
+            </p>
+          </div>
+          <div class="w-full lg:w-[48%]">
+            <div class="flex itmes-center gap-10 justify-between">
+              <div
+                class="px-3 py-1 border-[1px] borde-gray-500 rounded-full flex items-center gap-4 justify-center"
+              >
+                <i class="text-[#fff] fa-solid fa-envelope"></i>
+                <p class="text-[#fff]">JOIN MAILING LIST</p>
+              </div>
+              <div>
+                <a href="#" class="text-white text-2xl mr-2">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white text-2xl">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full h-[2px] my-8 bg-gray-500" />
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="w-48%]">
+            <p class="text-[#fff]">
+              Copyright © 2024 - Kamrul Hafiz Ahmed Law Office
+            </p>
+          </div>
+          <div class="w-[48%]">
+            <p class="text-[#fff]">Powered By: Mahabub Alom</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const mobile_icon = document.getElementById("mobile-icon");
+      const mobile_menu = document.getElementById("mobile-menu");
+      const hamburger_icon = document.querySelector("#mobile-icon i");
+
+      function openCloseMenu() {
+        mobile_menu.classList.toggle("block");
+        mobile_menu.classList.toggle("active");
+      }
+
+      function changeIcon(icon) {
+        icon.classList.toggle("fa-xmark");
+      }
+
+      mobile_icon.addEventListener("click", openCloseMenu);
+    </script>
+  </body>
+</html>
