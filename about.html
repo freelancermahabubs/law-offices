@@ -18,10 +18,10 @@
         <div class="top-bar-section">
           <div class="flex items-center lg:justify-between justify-center">
             <div class="h-[80px]">
-              <a href="#"
+              <a href="home.html"
                 ><img
                   class="h-full"
-                  src="https://i.ibb.co/9ZXj5Yx/b117a066ace15d5b9c39306fa98b4cb3.jpg"
+                  src="gallery/MLC Logo.jpg"
                   alt="Toronto Immigration lawyer"
                   id="logo"
               /></a>
@@ -146,7 +146,11 @@
       </div>
     </nav>
 
-
+    <div class="container">
+      <div class="w-full h-full">
+        <img src="gallery/About Us.jpg" alt="">
+      </div>
+    </div>
 
     <div class="container mx-auto clearfix">
       <div class="row">
@@ -155,10 +159,13 @@
             <div id="ps-profile" class="ps-body-content py-4">
               <div class="grid grid-cols-3 gap-4 clear-both">
                 <div class="col-span-1 p-4">
-                  <img
-                    alt="Lawyer,"
-                    src="https://media.istockphoto.com/id/1477032948/photo/black-man-leadership-and-corporate-meeting-in-office-with-executive-management-investor.jpg?s=1024x1024&w=is&k=20&c=hp4PIwhsIQc6-6p366EaQ0Zi7SJkUwmPOtPNaNUcQr0="
-                    class="border-0" />
+                  <div class="aspect-square w-full h-full rounded-lg shadow-lg">
+                    <img
+                      src="gallery/aboust.jpg"
+                      alt="Scarborough Notary Public"
+                      class="rounded-lg shadow-lg w-full h-full"
+                    />
+                  </div>
                 </div>
                 <div class="col-span-2 p-4">
                   <div class="ps-body-text">
@@ -221,69 +228,69 @@
       </div>
     </div>
 
-      <!-- Your existing footer code -->
+    <!-- Your existing footer code -->
 
-      <footer class="mt-30px] bg-[#000] py-10">
-        <div class="container mx-auto">
-          <div class="flex justify-between flex-col lg:flex-row items-center">
-            <div class="w-full lg:w-[48%]">
-              <p class="text-white"><i class="fa-solid fa-location-dot"></i></p>
-              <p class="text-white mb-2">
-                2972 Danforth Avenue, 2nd Floor, Toronto, ON, M4C 1M6 Canada
-                Shawpnil Road 2/3 House No. 3 Block - L Unit A2 Chairman Bari,
-                Banani Dhaka
-              </p>
-            </div>
-            <div class="w-full lg:w-[48%]">
-              <div class="flex itmes-center gap-10 justify-between">
-                <div
-                  class="px-3 py-1 border-[1px] borde-gray-500 rounded-full flex items-center gap-4 justify-center"
-                >
-                  <i class="text-[#fff] fa-solid fa-envelope"></i>
-                  <p class="text-[#fff]">JOIN MAILING LIST</p>
-                </div>
-                <div>
-                  <a href="#" class="text-white text-2xl mr-2">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                  <a href="#" class="text-white text-2xl">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </div>
+    <footer class="mt-30px] bg-[#000] py-10">
+      <div class="container mx-auto">
+        <div class="flex justify-between flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-[48%]">
+            <p class="text-white"><i class="fa-solid fa-location-dot"></i></p>
+            <p class="text-white mb-2">
+              2972 Danforth Avenue, 2nd Floor, Toronto, ON, M4C 1M6 Canada
+              Shawpnil Road 2/3 House No. 3 Block - L Unit A2 Chairman Bari,
+              Banani Dhaka
+            </p>
+          </div>
+          <div class="w-full lg:w-[48%]">
+            <div class="flex itmes-center gap-10 justify-between">
+              <div
+                class="px-3 py-1 border-[1px] borde-gray-500 rounded-full flex items-center gap-4 justify-center"
+              >
+                <i class="text-[#fff] fa-solid fa-envelope"></i>
+                <p class="text-[#fff]">JOIN MAILING LIST</p>
+              </div>
+              <div>
+                <a href="#" class="text-white text-2xl mr-2">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white text-2xl">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <hr class="w-full h-[2px] my-8 bg-gray-500" />
-        <div class="container mx-auto">
-          <div class="flex items-center justify-between">
-            <div class="w-48%]">
-              <p class="text-[#fff]">
-                Copyright © 2024 - Kamrul Hafiz Ahmed Law Office
-              </p>
-            </div>
-            <div class="w-[48%]">
-              <p class="text-[#fff]">Powered By: Mahabub Alom</p>
-            </div>
+      </div>
+      <hr class="w-full h-[2px] my-8 bg-gray-500" />
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="w-48%]">
+            <p class="text-[#fff]">
+              Copyright © 2024 - Kamrul Hafiz Ahmed Law Office
+            </p>
+          </div>
+          <div class="w-[48%]">
+            <p class="text-[#fff]">Powered By: Mahabub Alom</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      <script>
-        const mobile_icon = document.getElementById("mobile-icon");
-        const mobile_menu = document.getElementById("mobile-menu");
-        const hamburger_icon = document.querySelector("#mobile-icon i");
-  
-        function openCloseMenu() {
-          mobile_menu.classList.toggle("block");
-          mobile_menu.classList.toggle("active");
-        }
-  
-        function changeIcon(icon) {
-          icon.classList.toggle("fa-xmark");
-        }
-  
-        mobile_icon.addEventListener("click", openCloseMenu);
-      </script>
+    <script>
+      const mobile_icon = document.getElementById("mobile-icon");
+      const mobile_menu = document.getElementById("mobile-menu");
+      const hamburger_icon = document.querySelector("#mobile-icon i");
+
+      function openCloseMenu() {
+        mobile_menu.classList.toggle("block");
+        mobile_menu.classList.toggle("active");
+      }
+
+      function changeIcon(icon) {
+        icon.classList.toggle("fa-xmark");
+      }
+
+      mobile_icon.addEventListener("click", openCloseMenu);
+    </script>
   </body>
 </html>
